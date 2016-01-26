@@ -107,7 +107,7 @@ names(group_data) <- valid_column_names
 # Using the grouped data, summarize each table with the mean function
 mean_data <- summarize_each(group_data,funs(mean))
 # Output the tidy mean dataset to CSV for storage on GitHub
-write.csv(mean_data, file = "MeanTidy.csv")
+write.table(mean_data, file = "MeanTidy.txt",row.names = FALSE)
 
 # Remove the untidy datasets
 rm(list = c("part_data","full_data","act_names"))
