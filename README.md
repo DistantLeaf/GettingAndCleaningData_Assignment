@@ -24,7 +24,7 @@ Pre-processing prodcedure:
 4) Two outputs are stored a) the MeanTidy.txt which contains the means of the data grouped by Subject and Activity. As well as, b) FullTidy.csv which contains the tidy dataset before the averaging occurs.
 
 Processing:
-1) Import the raw data into dplyr table variables
+1) Import the raw data into dplyr table variables \n
 2) Import the reference data (activities and subjects) as dplyr table variables
 3) Rename the reference and raw data column names to more understandable labels
 4) Column bind the Activity Code and the Subject Code with the raw train and test data frames
