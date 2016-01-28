@@ -16,8 +16,11 @@ Raw Data Processing Procedure (run_analysis.R)
 
 Pre-processing prodcedure:
 1) Set your working directory to the location of the extracted RAW data 
+
 2) Install the dplyr package
+
 3) Source the script and the clean up will occur automatically
+
 4) Two outputs are stored a) the MeanTidy.txt which contains the means of the data grouped by Subject and Activity. As well as, b) FullTidy.csv which contains the tidy dataset before the averaging occurs.
 
 Processing:
