@@ -2,7 +2,6 @@
 # Please set you working directory as the directory with the raw data
 
 library(dplyr)
-library(tidyr)
 
 ### Step 0: Import all the data
 test_subject <- tbl_df(read.table("./test/subject_test.txt"))
@@ -106,7 +105,7 @@ names(group_data) <- valid_column_names
 
 # Using the grouped data, summarize each table with the mean function
 mean_data <- summarize_each(group_data,funs(mean))
-# Output the tidy mean dataset to CSV for storage on GitHub
+# Output the tidy mean dataset to TXT for storage on GitHub
 write.table(mean_data, file = "MeanTidy.txt",row.names = FALSE)
 
 # Remove the untidy datasets
